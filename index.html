@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main__container">
+      <header>
+        <div class="welcome_text">
+          <a href="https://www.ics-formation.fr/" target="blank">
+            <img src="./img/logo_CCI_ICS_1.png" alt=""
+          /></a>
+
+          <h1>PROMO</h1>
+          <img src="./img/phpmysql.png" alt="" />
+          <h1>2020!</h1>
+        </div>
+      </header>
+
+      <section class="navigation">
+        <div class="navbar-area">
+          <div class="container">
+            <nav class="site-navbar">
+              <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">profiles</a></li>
+                <li><a href="#contact">contact</a></li>
+              </ul>
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <section class="search">
+        <div class="search__area">
+          <h1>Nos personnages de la Pomo</h1>
+          <form id="search__stud">
+            <input type="text" placeholder="Trouve ton elève préféré(e)" />
+          </form>
+        </div>
+      </section>
+
+      <section class="cards" id="cards">
+        <!-- FROM script.js -->
+      </section>
+
+      <section class="video__area">
+        <div class="video__text__div">
+          <div class="video__text__div--inner">
+            <h1>L'effort et la sueur</h1>
+            <p>
+              Cela a été des mois harrassants, on a beaucoup appris en faisant
+              et en écoutant nos formateurs... On a eu des hauts et des bas au
+              niveau de la motivation, mais ce qui compte le plus c'est qu'elle
+              a toujours été présente...
+            </p>
+          </div>
+        </div>
+        <video id="video__bg" autoplay muted loop>
+          <source src="./img/code-video.mp4" type="video/mp4" />
+          <source src="/img/video.webm" type="video/mp4" />
+          Votre navigateur n'est pas supporté
+        </video>
+      </section>
+
+      <section class="form" id="contact">
+        <h4>CONTACTEZ NOUS</h4>
+        <form method="post" id="contact-form">
+          <select class="formscaledeFDP" name="names" id="name-select">
+            <option value="">Choisi un eleve</option>
+            <option value="cid">Cid Adrian</option>
+            <option value="fleg">Flego Guillaume</option>
+            <option value="galas">Galas Aurélie</option>
+            <option value="khin">Khin Nicolas</option>
+            <option value="deFressine">DeFressine Loïc</option>
+            <option value="petrovik">Petrovik Marko</option>
+            <option value="szymanski">Szymanski Tatiane</option>
+            <option value="ranaweera">Ranaweera Deborah</option>
+            <option value="bardeaux">Bardeaux Lionel</option>
+            <option value="tihon">Tihon Fabrice</option>
+          </select>
+          <input
+            class="formscale"
+            type="text"
+            name="first_name"
+            placeholder="Nom"
+            required
+            aria-required="true"
+          /><br />
+          <input
+            class="formscale"
+            type="text"
+            id="name"
+            name="last_name"
+            placeholder="Prenom"
+            required
+            aria-required="true"
+          /><br />
+          <input
+            class="formscale"
+            type="text"
+            name="email"
+            placeholder="Email"
+            pattern=".+@.+\..+"
+            required
+            aria-required="true"
+          /><br />
+          <textarea
+            placeholder="Message"
+            id="message"
+            class="formscale"
+            rows="5"
+            name="message"
+            cols="30"
+            required
+          ></textarea
+          ><br />
+          <input
+            id="button"
+            type="submit"
+            name="submit"
+            value="Send message"
+            class="submitBtn sendBtn formscale sendMessage"
+          />
+        </form>
+      </section>
+      <footer>
+        <div class="elephant"></div>
+        <div class="footer__base">
+          <p class="date">&copy;</p>
+        </div>
+      </footer>
+      <button id="buttonTop" title="Go to top">&uarr;</button>
+    </div>
+
+    <!-- <script src="./js/gsap.js" ></script> -->
+    <!-- <script src="./js/scroll.js" type="module"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/students.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
